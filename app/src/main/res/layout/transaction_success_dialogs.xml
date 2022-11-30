@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:background="@drawable/rounded_dialog"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/_10sdp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_alignParentEnd="true"
+            android:id="@+id/cancel_sheet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_close"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </RelativeLayout>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_marginHorizontal="@dimen/_10ssp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_right"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:textColor="#302A78"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Request submitted successfully."
+            android:fontFamily="@font/poppins_semi_bold"
+            android:textSize="@dimen/_18ssp"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:textColor="#302A78"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Your Transaction ID is"
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="@dimen/_18ssp"
+            android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_marginTop="@dimen/_10ssp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_8ssp"
+            android:background="@drawable/rounded_yellow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:textColor="#302A78"
+                android:text="01234567890"
+                android:fontFamily="@font/poppins_semi_bold"
+                android:textSize="@dimen/_14ssp"
+                android:layout_height="wrap_content"/>
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/copy"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:src="@drawable/fa_solid_copy"
+                android:layout_height="wrap_content"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_width="match_parent"
+            android:textColor="#6F6C90"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="It will take a while to add the money in your wallet.
+Please keep the transaction details stored for further assitance if needed."
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="@dimen/_12ssp"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/okClick"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_70sdp"
+            android:paddingVertical="@dimen/_5ssp"
+            android:background="@drawable/rounded_deep_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:text="OK"
+                android:layout_marginHorizontal="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/poppinsregular"
+                android:textSize="@dimen/_15ssp"
+                android:layout_height="wrap_content"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

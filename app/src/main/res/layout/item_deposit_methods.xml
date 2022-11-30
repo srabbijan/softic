@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/_5sdp"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:fontFamily="@font/poppinsregular"
+        android:textSize="@dimen/_12ssp"
+        android:textColor="#FFFFFF"
+        android:paddingStart="@dimen/_5sdp"
+        android:id="@+id/name"
+        android:text="Online Payment"
+        android:background="#302A78"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/help_faq_linear"
+        tools:itemCount="6"
+        app:spanCount="3"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        tools:listitem="@layout/item_deposit_methods_"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
